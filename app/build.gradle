@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.3"
+  defaultConfig {
+    applicationId "com.exp.androidtv"
+    minSdkVersion 17
+    targetSdkVersion 21
+    versionCode 1
+    versionName "0.1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile 'com.android.support:appcompat-v7:25.3.1'
+  compile 'com.android.support:recyclerview-v7:25.3.1'
+  compile 'me.jessyan:autosize:1.0.6'
+  compile 'com.jakewharton:butterknife:8.4.0'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+  compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+  compile 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha1'
+  compile project(':module-core')
+}

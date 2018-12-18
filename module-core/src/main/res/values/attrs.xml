@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <attr name="fontPath" format="string" />
+    <attr name="textFieldStyle" format="reference" />
+    <declare-styleable name="lbBaseGridView">
+        <attr name="focusOutFront" format="boolean" />
+        <attr name="focusOutEnd" format="boolean" />
+        <attr name="focusOutSideStart" format="boolean" />
+        <attr name="focusOutSideEnd" format="boolean" />
+        <attr name="horizontalMargin" format="dimension" />
+        <attr name="verticalMargin" format="dimension" />
+        <attr name="android:horizontalSpacing" />
+        <attr name="android:verticalSpacing" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="lbVerticalGridView">
+        <attr name="columnWidth" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="numberOfColumns" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="lbHorizontalGridView">
+        <attr name="rowHeight" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="numberOfRows" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewTV">
+        <attr name="android:orientation" tools:ignore="ResourceName" />
+        <attr name="layoutManagerTV" format="string" />
+        <attr name="numColumnsTV" format="integer" />
+        <attr name="numRowsTV" format="integer" />
+        <attr name="laneCountsStrTV" format="string" />
+        <attr name="isIntelligentScrollTV" format="boolean" />
+        <attr name="selectedItemOffsetStartTV" format="dimension" />
+        <attr name="selectedItemOffsetEndTV" format="dimension" />
+        <attr name="selectedItemIsCenteredTV" format="boolean" />
+        <attr name="isMenuTV" format="boolean" />
+        <attr name="isSelectFirstVisiblePositionTV" format="boolean" />
+        <attr name="loadMoreBeforehandCountTV" format="integer" />
+        <attr name="optimizeLayoutTV" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ShimmerLayout">
+        <attr name="mShimmerColor" format="color|reference" />
+        <!--缩放动效时间-->
+        <attr name="mAnimDuration" format="integer|reference" />
+        <!--放大系数-->
+        <attr name="mScale" format="float|reference" />
+        <!--是否绘制闪光-->
+        <attr name="mIsShimmerAnim" format="boolean|reference" />
+        <attr name="mBringToFront" format="boolean|reference" />
+        <!--是否自己处理动画-->
+        <attr name="mSelfFocus" format="boolean|reference" />
+        <!--是否有弹簧效果-->
+        <attr name="mIsBounceInterpolator" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="LabelView">
+        <attr name="label_distance" format="dimension" />
+        <attr name="label_height" format="dimension"/>
+        <attr name="label_strokeWidth" format="dimension"/>
+        <attr name="label_backgroundColor" format="color"/>
+        <attr name="label_strokeColor" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_textSize" format="dimension" />
+        <attr name="label_textStyle" format="enum" >
+            <enum name="NORMAL" value="0"/>
+            <enum name="BOLD" value="1"/>
+            <enum name="ITALIC" value="2"/>
+            <enum name="BOLD_ITALIC" value="3"/>
+        </attr>
+        <attr name="label_textColor" format="color"/>
+        <attr name="label_visual" format="boolean"/>
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1"/>
+            <enum name="RIGHT_TOP" value="2"/>
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

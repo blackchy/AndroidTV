@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="2pt"
+    >
+  <FrameLayout
+      android:id="@+id/fl_content"
+      android:layout_width="150pt"
+      android:layout_height="150pt"
+      android:background="@color/colorPrimary"
+      >
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="text"
+        android:textColor="@android:color/white"
+        android:textSize="25pt"
+        />
+  </FrameLayout>
+</RelativeLayout>

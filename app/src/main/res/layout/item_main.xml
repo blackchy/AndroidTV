@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_text"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+    <TextView
+        android:id="@+id/tv_item_main"
+        android:layout_width="300pt"
+        android:layout_height="100pt"
+        android:layout_margin="20pt"
+        android:gravity="center"
+        android:text="item"
+        android:textColor="@android:color/white"
+        android:textSize="25pt"
+        />
+  </FrameLayout>
+</RelativeLayout>

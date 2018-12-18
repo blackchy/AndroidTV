@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="2pt"
+    >
+  <FrameLayout
+      android:id="@+id/fl_content"
+      android:layout_width="324pt"
+      android:layout_height="150pt"
+      android:background="@color/colorPrimary"
+      >
+    <ImageView
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30pt"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="30pt"
+        android:text="text"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="25pt"
+        />
+  </FrameLayout>
+</RelativeLayout>
